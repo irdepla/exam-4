@@ -1,0 +1,52 @@
+.hero{
+    padding: 0;
+
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        background-image: url("../../assets/images/hero-mobile-bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+        padding-right: 44px;
+        padding-left: 16px;
+        padding-bottom: 32px;
+        margin-top: 160px;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $main-color;
+    }
+
+    &__about{
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+    }
+    
+
+    &__images{
+        margin-top: 16px;
+        display: flex;
+        gap: 13px;
+        justify-content: center;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+
+
+
+}

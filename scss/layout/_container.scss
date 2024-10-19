@@ -2,23 +2,24 @@
   max-width: 100%;
   padding: 0 $container-padding;
   margin: 0 auto;
+  min-width: 320px;
 }
 
 @include mobile-large {
   .container {
-    max-width: 600px;
+    max-width: 472px;
   }
 }
 
 @include tablet {
   .container {
-    max-width: 960px;
+    max-width: 894px;
   }
 }
 
 @include desktop {
   .container {
-    max-width: 1200px;
+    max-width: 1182px;
   }
 }
 
