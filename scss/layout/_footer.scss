@@ -31,6 +31,14 @@
         font-weight: 500;
         line-height: 24px;
         color: $main-color;
+
+
+        hr{
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+
     }
 
 
@@ -69,14 +77,16 @@
         gap: 31px;
 
 
-        p{
-            color: $main-color;
-        }
+        
+            p{
+                color: $main-color;
+            }
 
 
         div{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
             align-items: center;
             background-color: #888C94;
             padding: 12px 63px;
@@ -102,5 +112,67 @@
         padding: 8px;
         background-color: #F8F3EC;
         border-radius: 12px;
+    }
+}
+
+
+@include mobile-large{
+    .footer{
+        margin-top: 47px;
+        &__logo{
+            padding: 0 10px;
+        }
+
+        &__wrapper{
+            position: relative;
+            gap: 65px;
+        }
+
+        &__list__container{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            
+
+
+            hr{
+                display: none;
+            }
+        }
+
+        &__list{
+            flex-direction: column;
+        }
+
+        &__smm{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__currency__rate{
+            div{
+                grid-template-columns: repeat(2,1fr);
+                padding: 12px 74px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .currency__rate__title{
+            margin-right: 400px;
+        }
+
+        &__sponsors{
+            position: absolute;
+            top: 370px;
+            left: 300px;
+        }
+
     }
 }

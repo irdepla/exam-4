@@ -4,7 +4,6 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        // border: 1px solid red;
         padding-bottom: 24px;
         border-bottom: 1px solid $secondary-color;
         text-align: left;
@@ -93,6 +92,11 @@
         }
 
 
+        &:last-child{
+            border-bottom: 0;
+        }
+
+
 
     }
 
@@ -101,6 +105,10 @@
         display: block;
         margin: auto;
         margin-top: 24px;
+
+        &__container{
+            backdrop-filter: blur(48px);
+        }
     }
 
     .main__card{
@@ -114,5 +122,46 @@
         }
     }
 
+
+}
+
+
+@include mobile-large{
+    .features{
+
+
+
+
+        &__card{
+            padding-bottom: 47px;
+            &__title{
+                font-size: 24px;
+            }
+
+            &s{
+                gap: 47px;
+            }
+
+            &__info{
+                span{
+                    display: inline;
+                }
+            }
+
+            &:nth-child(4){
+                padding: 32px;
+                background-color: #888C94;
+                border-bottom: 0;
+    
+                
+                
+    
+    
+            }
+        }
+
+
+
+    }
 
 }

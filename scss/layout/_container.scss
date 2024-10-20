@@ -1,6 +1,6 @@
 .container {
   max-width: 100%;
-  padding: 0 $container-padding;
+  // padding: 0 $container-padding;
   margin: 0 auto;
   min-width: 320px;
 }
@@ -8,21 +8,21 @@
 @include mobile-large {
   .container {
     padding: 0;
-    min-width: 568px;
+    min-width: 472px;
   }
 }
 
 @include tablet {
   .container {
     padding: 0;
-    max-width: 894px;
+    min-width: 894px;
   }
 }
 
 @include desktop {
   .container {
     padding: 0;
-    max-width: 1182px;
+    min-width: 1182px;
   }
 }
 
