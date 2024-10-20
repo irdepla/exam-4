@@ -13,6 +13,19 @@
         justify-content: center;
     }
 
+    &__search-btn {
+        background-color: #F8F3EC;
+        padding: 8px;
+        border-radius: 12px;
+    }
+
+    &__btn{
+        background-color: #F8F3EC;
+        padding: 10px 24px;
+        border-radius: 12px;
+        color: $main-color;
+    }
+
     &__search-btn, &__btn, &__list{
         display: none;
     }

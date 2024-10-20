@@ -16,10 +16,10 @@
         flex-direction: column;
         gap: 50px;
         align-items: flex-start;
+        padding-top: 160px;
         padding-right: 44px;
         padding-left: 16px;
         padding-bottom: 32px;
-        margin-top: 160px;
     }
 
     &__title{
@@ -49,4 +49,33 @@
 
 
 
+}
+
+
+@include mobile-large{
+    .hero{
+
+            // background-image: url("../../assets/images/hero-destkop.svg");
+            // background-repeat: no-repeat;
+            // background-position: center;
+
+        &__wrapper{
+            background-image: none;
+            background-image: url("../../assets/images/hero-destkop.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+
+        &__info{
+            padding: 257px 99px 157px 32px;
+
+        }
+
+
+
+
+
+    }
 }

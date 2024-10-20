@@ -1,0 +1,118 @@
+.features{
+    margin-top: 22px;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        // border: 1px solid red;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $secondary-color;
+        text-align: left;
+
+
+        &s{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 24px;
+        }
+
+        &__date{
+            color: $secondary-color;
+            font-size: 13px;
+            font-style: italic;
+        }
+        &__subtitle{
+            color: $main-color;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+        &__title{
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: $main-color;
+            text-align: left;
+            text-transform: uppercase;
+
+        }
+
+
+        &__info{
+            font-size: 13px;
+            letter-spacing: 0.01em;
+            color: $main-color;
+            opacity: 90%;
+            span{
+                display: none;
+            }
+        }
+
+        &:nth-child(2){
+            :nth-child(3){
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+            }
+
+        }
+
+
+        &:nth-child(3){
+            :nth-child(3){
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+            }
+
+        }
+
+
+        &:nth-child(4){
+            padding: 32px;
+            background-color: #888C94;
+            border-bottom: 0;
+
+            
+            :nth-child(1), :nth-child(2), :nth-child(3), :nth-child(4){
+                color: white;
+            }
+
+
+            :nth-child(3){
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+            }
+
+            :nth-child(4){
+                font-size: 14px;
+                letter-spacing: 0.02em;
+            }
+
+
+        }
+
+
+
+    }
+
+
+    &__btn{
+        display: block;
+        margin: auto;
+        margin-top: 24px;
+    }
+
+    .main__card{
+        h2{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-transform: uppercase;
+        }
+    }
+
+
+}

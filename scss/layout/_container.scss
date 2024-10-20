@@ -7,18 +7,21 @@
 
 @include mobile-large {
   .container {
-    max-width: 472px;
+    padding: 0;
+    min-width: 568px;
   }
 }
 
 @include tablet {
   .container {
+    padding: 0;
     max-width: 894px;
   }
 }
 
 @include desktop {
   .container {
+    padding: 0;
     max-width: 1182px;
   }
 }
