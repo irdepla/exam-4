@@ -41,6 +41,21 @@
     z-index: 1000;
     transition: right 0.3s ease-in-out; 
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__logo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 
     &--active {
       right: 0;
@@ -101,5 +116,16 @@
         &__btn__container{
             gap: 48px;
         }
+    }
+}
+
+
+@include desktop{
+    .nav{
+        &__list{
+            display: flex;
+            gap: 40px;
+        }
+        padding: 20px;
     }
 }

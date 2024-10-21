@@ -9,14 +9,14 @@
 
 @mixin tablet {
   // 990px - 1439px;
-  @media (min-width: 990px) {
+  @media (min-width: 894px) {
     @content;
   }
 }
 
 @mixin desktop {
   // 1240px --- .......
-  @media (min-width: 1440px) {
+  @media (min-width: 1182px) {
     @content;
   }
 }

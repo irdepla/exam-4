@@ -23,17 +23,17 @@
               </li>
               <li class="nav__list__item">
                 <a href="#">
-                  <span> Отели </span>
+                  <span> Путешествия </span>
                 </a>
               </li>
               <li class="nav__list__item">
                 <a href="#">
-                  <span> Отели </span>
+                  <span> Экскурсии </span>
                 </a>
               </li>
               <li class="nav__list__item">
                 <a href="#">
-                  <span> Отели </span>
+                  <span> Страны </span>
                 </a>
               </li>
             </ul>
@@ -42,19 +42,41 @@
               <button class="nav__burger-btn" id="burger-btn">
                 <img src="./assets/icons/burger-btn.svg" alt="" />
               </button>
-  
+
               <div class="nav__modal" id="nav-modal">
-                <ul class="nav__modal-links">
-                  <li><a href="#">Напрямки</a></li>
-                  <li><a href="#">Напрямки</a></li>
-                  <li><a href="#">Напрямки</a></li>
-                  <li><a href="#">Напрямки</a></li>
-                  <li><a href="#">Напрямки</a></li>
+                <div class="nav__modal__logo">
+                  <img src="./assets/icons/nav-logo.svg" alt="">
+                  <img src="./assets/icons/closebar icon.svg" alt="">
+                </div>
+                <ul class="nav__modal__list">
+                  <li class="nav__list__item">
+                    <a href="#">
+                      <span> Отели </span>
+                    </a>
+                  </li>
+                  <li class="nav__list__item">
+                    <a href="#">
+                      <span> Путешествия </span>
+                    </a>
+                  </li>
+                  <li class="nav__list__item">
+                    <a href="#">
+                      <span> Экскурсии </span>
+                    </a>
+                  </li>
+                  <li class="nav__list__item">
+                    <a href="#">
+                      <span> Страны </span>
+                    </a>
+                  </li>
                 </ul>
+                <button class="nav__modal__btn universal__btn">
+                  Войти
+                </button>
               </div>
-  
+
               <div class="nav__overlay"></div>
-              
+
               <button class="nav__search-btn">
                 <img src="./assets/icons/search-btn.svg" alt="search-btn" />
               </button>
@@ -66,7 +88,7 @@
     </header>
 
     <main>
-       <section class="hero">
+      <section class="hero">
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__info">
@@ -75,15 +97,20 @@
                 НА ВСЕ ВРЕМЕНА!
               </h1>
               <p class="hero__about">
-                В самом востребованном отеле <br> курорта Le Lana с 28 декабря по 2 <br>
+                В самом востребованном отеле <br />
+                курорта Le Lana с 28 декабря по 2 <br />
                 января доступны для бронирования
               </p>
               <button class="universal__btn hero__btn">Подробнее</button>
             </div>
           </div>
 
-          <div class="hero__images">
-            <img src="./assets/images/hero-img1.svg" alt="" />
+          <div class="hero__images" style="position: relative">
+            <img
+              src="./assets/images/hero-img1.svg"
+              alt=""
+              style="position: absolute"
+            />
             <img src="./assets/images/hero-img2.svg" alt="" />
             <img src="./assets/images/hero-img3.svg" alt="" />
           </div>
@@ -91,177 +118,318 @@
       </section>
       <section class="features">
         <div class="container">
-          <div class="features__cards">
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                BVLGARI RESORT BALI: ПООЩРИТЕЛЬНАЯ ПРОГРАММА
-              </h2>
-              <p class="features__card__info">
-                Поощрительная программа от Bvlgari Resort Bali
-                <span>
+          <div class="features__wrapper">
+            <!-- <div class="features__new__cards">
+              <div class="features__new__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
+
+              <div class="features__new__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
+
+              <div class="features__new__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
+
+              <div class="features__new__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
+
+              <div class="features__new__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
+            </div> -->
+            <div class="features__cards">
+              <div class="features__card first__card">
+                <div class="features__card__text">
+                  <span class="features__card__date"> 01 декабря 2022 </span>
+                  <p class="features__card__subtitle">Путешествие</p>
+                  <h2 class="features__card__title">
+                    BVLGARI RESORT BALI: ПООЩРИТЕЛЬНАЯ ПРОГРАММА
+                  </h2>
+                  <p class="features__card__info">
+                    Поощрительная программа от Bvlgari Resort Bali
+                    <span>
+                      Одобрена инициатива министра туризма Израиля о допуске в
+                      страну туристов, привитых российской вакциной “Спутник V”.
+                      Наши путешественники смогут приезжать в Израиль уже с 1
+                      декабря.
+                    </span>
+                  </p>
+                </div>
+                <div class="features__card__img">
+                  <img src="./assets/images/card-img.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="features__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+                <button class="universal__btn features__card__btn">
+                  Подробнее
+                </button>
+              </div>
+
+              <div class="features__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+                <button class="universal__btn features__card__btn">
+                  Подробнее
+                </button>
+              </div>
+
+              <div class="features__card third__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  КУРШЕВЕЛЬ НА ВСЕ <br />
+                  ВРЕМЕНА!
+                </h2>
+                <p class="features__card__info">
                   Одобрена инициатива министра туризма Израиля о допуске в
                   страну туристов, привитых российской вакциной “Спутник V”.
                   Наши путешественники смогут приезжать в Израиль уже с 1
                   декабря.
-                </span>
-              </p>
-              <img src="./assets/images/card-img.svg" alt="" />
-            </div>
+                </p>
+              </div>
 
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                Вакцинный туризм: последние сводки с полей
-              </h2>
-              <p class="features__card__info">
-                Поощрительная программа от Bvlgari Resort Bali
-                <span>
+              <div class="features__card main__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Одобрена инициатива министра туризма Израиля о допуске в
+                  страну туристов, привитых российской вакциной “Спутник V”.
+                </h2>
+                <p class="features__card__info">
                   Одобрена инициатива министра туризма Израиля о допуске в
                   страну туристов, привитых российской вакциной “Спутник V”.
                   Наши путешественники смогут приезжать в Израиль уже с 1
                   декабря.
-                </span>
-              </p>
-            </div>
+                </p>
+                <img src="./assets/images/card-img.svg" alt="" />
+              </div>
 
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                Вакцинный туризм: последние сводки с полей
-              </h2>
-              <p class="features__card__info">
-                Поощрительная программа от Bvlgari Resort Bali
-                <span>
-                  Одобрена инициатива министра туризма Израиля о допуске в
-                  страну туристов, привитых российской вакциной “Спутник V”.
-                  Наши путешественники смогут приезжать в Израиль уже с 1
-                  декабря.
-                </span>
-              </p>
-            </div>
+              <div class="additional__card">
+                <div class="container">
+                  <div class="additional__card__wrapper">
+                    <div class="additional__card__img">
+                      <img src="./assets/images/add-card-img.svg" alt="" />
+                    </div>
+                    <div class="additional__card__text">
+                      <span class="features__card__date">
+                        01 декабря 2022
+                      </span>
+                      <p class="features__card__subtitle">Путешествие</p>
+                      <h2 class="features__card__title">
+                        Одобрена инициатива министра туризма Израиля о допуске в
+                        страну туристов, привитых российской вакциной “Спутник
+                        V”.
+                      </h2>
+                      <p class="features__card__info">
+                        Поощрительная программа от Bvlgari Resort Bali
+                        <span>
+                          Одобрена инициатива министра туризма Израиля о допуске
+                          в страну туристов, привитых российской вакциной
+                          “Спутник V”. Наши путешественники смогут приезжать в
+                          Израиль уже с 1 декабря.
+                        </span>
+                      </p>
+                      <button class="universal__btn features__card__btn">
+                        Подробнее
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">КУРШЕВЕЛЬ НА ВСЕ <br> ВРЕМЕНА!</h2>
-              <p class="features__card__info">
-                Одобрена инициатива министра туризма Израиля о допуске в страну
-                туристов, привитых российской вакциной “Спутник V”. Наши
-                путешественники смогут приезжать в Израиль уже с 1 декабря.
-              </p>
-            </div>
+              <div class="features__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
 
-            <div class="features__card main__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                Одобрена инициатива министра туризма Израиля о допуске в страну
-                туристов, привитых российской вакциной “Спутник V”.
-              </h2>
-              <p class="features__card__info">
-                Одобрена инициатива министра туризма Израиля о допуске в страну
-                туристов, привитых российской вакциной “Спутник V”. Наши
-                путешественники смогут приезжать в Израиль уже с 1 декабря.
-              </p>
-              <img src="./assets/images/card-img.svg" alt="" />
-            </div>
+              <div class="features__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
 
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                Вакцинный туризм: <br />
-                последние сводки с полей
-              </h2>
-              <p class="features__card__info">
-                Поощрительная программа от Bvlgari Resort Bali
-                <span>
-                  Одобрена инициатива министра туризма Израиля о допуске в
-                  страну туристов, привитых российской вакциной “Спутник V”.
-                  Наши путешественники смогут приезжать в Израиль уже с 1
-                  декабря.
-                </span>
-              </p>
-            </div>
+              <div class="features__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
 
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                Вакцинный туризм: <br />
-                последние сводки с полей
-              </h2>
-              <p class="features__card__info">
-                Поощрительная программа от Bvlgari Resort Bali
-                <span>
-                  Одобрена инициатива министра туризма Израиля о допуске в
-                  страну туристов, привитых российской вакциной “Спутник V”.
-                  Наши путешественники смогут приезжать в Израиль уже с 1
-                  декабря.
-                </span>
-              </p>
-            </div>
+              <div class="features__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
 
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                Вакцинный туризм: <br />
-                последние сводки с полей
-              </h2>
-              <p class="features__card__info">
-                Поощрительная программа от Bvlgari Resort Bali
-                <span>
-                  Одобрена инициатива министра туризма Израиля о допуске в
-                  страну туристов, привитых российской вакциной “Спутник V”.
-                  Наши путешественники смогут приезжать в Израиль уже с 1
-                  декабря.
-                </span>
-              </p>
+              <div class="features__card">
+                <span class="features__card__date"> 01 декабря 2022 </span>
+                <p class="features__card__subtitle">Путешествие</p>
+                <h2 class="features__card__title">
+                  Вакцинный туризм: <br />
+                  последние сводки с полей
+                </h2>
+                <p class="features__card__info">
+                  Поощрительная программа от Bvlgari Resort Bali
+                  <span>
+                    Одобрена инициатива министра туризма Израиля о допуске в
+                    страну туристов, привитых российской вакциной “Спутник V”.
+                    Наши путешественники смогут приезжать в Израиль уже с 1
+                    декабря.
+                  </span>
+                </p>
+              </div>
             </div>
-
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                Вакцинный туризм: <br />
-                последние сводки с полей
-              </h2>
-              <p class="features__card__info">
-                Поощрительная программа от Bvlgari Resort Bali
-                <span>
-                  Одобрена инициатива министра туризма Израиля о допуске в
-                  страну туристов, привитых российской вакциной “Спутник V”.
-                  Наши путешественники смогут приезжать в Израиль уже с 1
-                  декабря.
-                </span>
-              </p>
+            <div class="features__btn__container">
+              <button class="features__btn universal__btn">Все анонсы</button>
             </div>
-
-            <div class="features__card">
-              <span class="features__card__date"> 01 декабря 2022 </span>
-              <p class="features__card__subtitle">Путешествие</p>
-              <h2 class="features__card__title">
-                Вакцинный туризм: <br />
-                последние сводки с полей
-              </h2>
-              <p class="features__card__info">
-                Поощрительная программа от Bvlgari Resort Bali
-                <span>
-                  Одобрена инициатива министра туризма Израиля о допуске в
-                  страну туристов, привитых российской вакциной “Спутник V”.
-                  Наши путешественники смогут приезжать в Израиль уже с 1
-                  декабря.
-                </span>
-              </p>
-            </div>
-          </div>
-          <div class="features__btn__container">
-            <button class="features__btn universal__btn">Все анонсы</button>
           </div>
         </div>
       </section>
@@ -284,19 +452,18 @@
                   <span> Москва </span>
                 </a>
               </li>
-  
+
               <li class="footer__list__item">
                 <a href="#">
                   <span> +7 (499) 995-21-79 </span>
                 </a>
               </li>
-  
+
               <li class="footer__list__item">
                 <a href="#">
                   <span> info@alacarte.world </span>
                 </a>
               </li>
-  
             </ul>
             <hr />
 
@@ -306,13 +473,13 @@
                   <span> Дубай </span>
                 </a>
               </li>
-  
+
               <li class="footer__list__item">
                 <a href="#">
                   <span> +971 (4) 000-0000 </span>
                 </a>
               </li>
-  
+
               <li class="footer__list__item">
                 <a href="#">
                   <span> info@alacarte.world </span>
@@ -335,7 +502,7 @@
           </div>
 
           <div class="footer__currency__rate">
-              <p class="currency__rate__title">Курс на 06.11.2021</p>
+            <p class="currency__rate__title">Курс на 06.11.2021</p>
             <div>
               <span>RUB/USD 72,9173</span>
               <span>RUB/USD 72,9173</span>

@@ -6,4 +6,12 @@
     font-size: 14px;
     border: none;
     cursor: pointer;
+    background: linear-gradient(45deg, #D3A562, #F5CBA7, #B97D48, #E6A57E);
+    background-size: 300% 300%; 
+    transition: background-position 1s ease;
+
+
+    &:hover{
+        background-position: right center;
+    }
 }

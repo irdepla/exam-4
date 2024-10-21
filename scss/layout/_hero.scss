@@ -85,7 +85,6 @@
 
         &__images{
             position: relative;
-            display: flex;
 
             :nth-child(3){
                 top: -80px;
@@ -113,6 +112,60 @@
 
 @include tablet{
     .hero{
+        &__images{
+            position: relative;
+            :nth-child(3){
+                top: -80px;
+                left: 450px;
+            }
+            :nth-child(2){
+                top: -80px;
+                left: 260px;
+            }
+            :nth-child(1){
+                top: -80px;
+                left: 80px;
+            }
+            img{
+                position: absolute;
+            }
+        }
+
         
+    }
+}
+
+
+@include desktop{
+    .hero{
+        background-image: url("../../assets/images/hero-destkop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__wrapper{
+            background-image: none;
+        }
+
+        &__images{
+            :nth-child(3){
+                top: -200px;
+                left: 1000px;
+            }
+            :nth-child(2){
+                top: -350px;
+                left: 1000px;
+            }
+            :nth-child(1){
+                top: -500px;
+                left: 1000px;
+            }
+            img{
+                position: absolute;
+            }
+        }
+
+
+        padding: 0 128px;
+
     }
 }

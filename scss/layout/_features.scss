@@ -1,5 +1,11 @@
 .features{
     margin-top: 22px;
+
+    .additional__card{
+        display: none;
+    }
+
+
     &__card{
         display: flex;
         flex-direction: column;
@@ -8,6 +14,8 @@
         border-bottom: 1px solid $secondary-color;
         text-align: left;
 
+
+        
 
         &s{
             display: grid;
@@ -130,6 +138,9 @@
     .features{
 
 
+        .additional__card{
+            display: none;
+        }
 
 
         &__card{
@@ -164,4 +175,141 @@
 
     }
 
+}
+
+
+
+
+
+@include tablet{
+    .features{
+        
+
+    .first__card{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 12px;
+    }
+
+    .additional__card{
+
+        display: flex;
+
+        &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        }
+
+        &__text{
+            flex: 1;
+            flex-direction: column;
+            gap: 12px;
+
+
+            p{
+                margin-top: 12px;
+            }
+            h2{
+                margin-top: 12px;
+            }
+            button{
+                display: block;
+                margin: auto;
+                margin-top: 30px;
+            }
+        }
+
+        &__img{
+            flex: 0 0 280px;
+        }
+        
+    }
+
+
+
+    .third__card{
+        position: absolute;
+        bottom: 1930px;
+        right: 540px;
+    }
+
+
+
+    &__card{
+
+
+
+        &s{
+            position: relative;
+        }
+
+        &:nth-child(2){
+            display: flex;
+            justify-content: flex-end;
+        }
+
+
+
+
+
+        &__btn{
+            margin-left: auto;
+        }
+
+
+
+       
+
+        
+
+        &:first-child{
+            .features__card__text{
+                flex: 1;
+
+                p{
+                    span{
+                        display: none;
+                    }
+                }
+
+            }
+
+            h2{
+                font-size: 32px;
+            }
+
+            
+            
+
+
+
+            .features__card__img{
+                flex: 0 0 440px;
+                img{
+                    width: 100%;
+                }
+            }
+
+
+
+        }
+
+
+
+
+    }
+
+        
+
+
+    }
+    
+}
+
+@include desktop{
+    .features{
+    }
 }
